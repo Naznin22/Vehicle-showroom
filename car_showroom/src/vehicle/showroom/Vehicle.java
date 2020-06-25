@@ -9,6 +9,9 @@ public class Vehicle {
 	protected String engine_power;
 	protected String tire_size;
 	
+	public Vehicle() {
+		
+	}
 	
 	public Vehicle(String type,int model_no, String engine_type, String engine_power, String tire_size) {
 		this.type = type;

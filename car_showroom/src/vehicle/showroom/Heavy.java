@@ -6,11 +6,15 @@ public class Heavy extends Vehicle {
 	protected String weight;
 	public List<Heavy> heavy_vehicles;
 	
+	public Heavy() {
+		
+	}
+	
 	public Heavy(String type, int model_no, String engine_type, String engine_power, String tire_size, String weight ) {
 		super(type, model_no, engine_type,engine_power,tire_size);
 		this.weight = weight;
-		this.type = "Heavy";
-		this.engine_type = "Diesel";
+//		this.type = "Heavy";
+//		this.engine_type = "Diesel";
 	}
 	
 	public List<Heavy> getHeavy_vehicles() {
