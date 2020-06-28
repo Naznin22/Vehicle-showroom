@@ -27,7 +27,7 @@ public class Sports extends Vehicle {
 	
 	@Override
 	public String toString() {
-		return (super.toString()+ turbo);
+		return (super.toString()+" Turbo: " + turbo);
 	}
 	
 }

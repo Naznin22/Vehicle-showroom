@@ -25,12 +25,13 @@ public class Showroom {
 		if(vehicle.type.equals("Sports")) total_count+=20;
 	}
 	
-	public void removeVehicle(Vehicle vehicle) {
-		vehicles.remove(vehicle);
+	public void removeVehicle(int model_no) {
+		vehicles.removeIf(vehicle -> vehicle.model_no == model_no);
 	}
 	
 	//return total counts of vehicles
 	public int getCount() {
+		System.out.println("Current Expected Visitors: ");
 		return total_count;
 	}
 	public void updateCount(int count) {

@@ -43,7 +43,7 @@ public class Test {
 			
 			if(type.equals("Sports")) {
 				System.out.println("Enter turbo: ");
-				turbo = scan.hasNext();
+				turbo = scan.hasNext("True");
 				scan.nextLine();
 				vehicle = new Sports("Sports",model,"Oil",engine_power,
 									tire_size,turbo);
@@ -74,8 +74,12 @@ public class Test {
 		String remove;
 		System.out.println("Remove a vehicle?");
 		remove = scan.nextLine();
+		
 		if(remove.equals("Yes")) {
-			showroom.removeVehicle(vehicle);
+			System.out.println("Enter Model: ");
+			int model_no = scan.nextInt();
+			scan.nextLine();
+			showroom.removeVehicle(model_no);
 			System.out.println(showroom.getVehicles());
 		}else {
 			System.out.println(showroom.getVehicles());

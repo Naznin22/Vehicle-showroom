@@ -26,7 +26,7 @@ public class Heavy extends Vehicle {
 	
 	@Override
 	public String toString() {
-		return (super.toString()+ weight);
+		return (super.toString()+" Weight: "+ weight);
 	}
 	
 }

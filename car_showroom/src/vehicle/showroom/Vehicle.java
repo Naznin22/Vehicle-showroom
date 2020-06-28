@@ -24,7 +24,7 @@ public class Vehicle {
 	
 	
 	public String toString() {
-		return ("type"+type+"model "+model_no+"engine_type "+engine_type+
-				"engine_power "+engine_power+"tire_size "+tire_size);
+		return ("Type: "+type+" Model: "+model_no+" Engine type: "+engine_type+
+				" Engine power: "+engine_power+" Tire_size: "+tire_size);
 	}
 }
